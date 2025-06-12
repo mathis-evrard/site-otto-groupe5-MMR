@@ -1,0 +1,327 @@
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,300;1,300&display=swap);
+*{
+
+font-family: 'montserrat', sans-serif; /* Police d'écriture */
+ 
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(209, 61, 61); /* Définit le fond rouge partout */
+    color: white; /* Facultatif : rend le texte blanc pour un meilleur contraste */
+}
+#presentation {
+    margin-top: 60px; /* Ajoute un espace sous la barre de navigation */
+    padding: 20px;
+    background-color:rgb(209, 61, 61); /* Couleur de fond */
+    color: rgb(243, 242, 245); /* Couleur du texte */
+    width: 100%; /* Prend toute la largeur de l'écran */
+    height: 100%; /* Prend toute la hauteur de l'écran */
+    font-size: 1rem;
+   
+}
+.section_head {
+    background-image: url('../images/PHOTODEGROUPE.jpg');  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: middle top;
+    background-position-y: 30%;
+    height: 100vh; /* Prend toute la hauteur de l'écran */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(236, 233, 233); /* Pour que le texte soit visible */
+    font-size: 1rem;
+    text-align: top; 
+    font-family: 'Abril Fatface'; /* Police d'écriture */
+}
+
+.section_head h2 {
+    color: #fff;
+    margin-top:10% ;   /* Ajuste la valeur pour la hauteur désirée */
+    margin-bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem; /* Taille du texte */
+}
+
+head.header{
+    color: rgb(243, 242, 245); /* Pour que le texte soit visible */
+    font-family: 'Abril Fatface';
+    font-size: 1rem;
+    text-align: left;
+}
+
+.navbar {
+    position: fixed; /* Fixe la barre en haut de la page */
+    top: 0;
+    left: 0;
+    width: 100%; /* Prend toute la largeur de l'écran */
+    background-color: #030303; /* Couleur de fond */
+    color: rgb(250, 247, 247); /* Couleur du texte */
+    padding: 25px 20px;
+    z-index: 1000; /* Assure que la barre est au-dessus des autres éléments */
+    display: flex;
+    justify-content: center;
+
+}
+
+.navbar ul {
+    list-style: none; /* Supprime les puces */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Espacement entre les éléments */
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: rgb(247, 247, 250);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #e63946; /* Couleur au survol */
+}
+
+section {
+    margin-top: 60px; /* Ajustez selon la hauteur de la barre de navigation */
+}
+
+    
+
+#title{
+    margin-top: 20px;
+    color: rgb(10, 10, 10); /* Pour que le texte soit visible */
+    font-family: 'Abril Fatface'; /* Police d'écriture */
+    font-size: 3rem;
+    text-align: center;
+    font-weight:500;
+}
+
+.team-container {
+    display: flex; /* Active Flexbox */
+    justify-content: center; /* Centre les éléments horizontalement */
+    gap: 50px; /* Ajoute un espace entre les membres */
+    flex-wrap: wrap; /* Permet de passer à la ligne si l'espace est insuffisant */
+    width: 100%; /* Prend toute la largeur de l'écran */
+}
+
+.team-member {
+    text-align: center; /* Centre le prénom et l'image */
+    flex: 1 1 200px; /* Permet aux éléments de s'adapter à l'espace disponible */
+    max-width: 350px; /* Limite la largeur maximale des membres */
+    width: 100%; /* Prend toute la largeur de l'écran */
+}
+
+.team-member p {
+    font-size: 1.5rem; /* Taille du texte pour les prénoms */
+    font-weight: bold; /* Met le prénom en gras */
+    margin-bottom: 10px; /* Ajoute un espace entre le prénom et l'image */
+    color: white; /* Couleur du texte */
+    
+    
+}
+.team-member a{
+    text-decoration: none; /* Supprime le soulignement */
+    color: rgb(247, 247, 250); /* Couleur du texte */
+    font-weight: bold; /* Met le prénom en gras */
+    transition: color 0.3s ease; /* Animation de la couleur au survol */
+}
+.team-member a:hover {
+    color: #020202; /* Couleur au survol */
+}
+.team-member img {
+    width: 300px; /* Largeur de l'image */
+    height: 300px; /* Hauteur de l'image */
+    border-radius: 50%; /* Rend l'image ronde */
+    object-fit: cover; /* Ajuste l'image pour qu'elle remplisse le conteneur sans déformation */
+    margin-bottom: 10px; /* Ajoute un espace entre l'image et le prénom */
+}
+
+
+.photo_groupe img {
+    margin-top: 20px; /* Ajoute un espace au-dessus de l'image */
+    width: 500px; /* Largeur de l'image */
+    height: 300px;; /* Hauteur de l'image */
+    max-width: px; /* Limite la largeur maximale de l'image */
+    max-height: 1000px; /* Limite la hauteur maximale de l'image */
+
+    height: auto; /* Ajuste la hauteur automatiquement pour conserver les proportions */
+    object-fit: contain; /* Ajuste l'image sans la déformer */
+}
+
+.robot {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+.video-container {
+  display: flex;
+  justify-content: center; /* Centrer l'ensemble si tu veux */
+  gap: 20px; /* Espace entre les vidéos */
+  flex-wrap: wrap; /* Permet de passer à la ligne si l'écran est trop petit */
+}
+
+.video {
+  width: 300px; /* ou un autre taille fixe ou responsive */
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.member-section {
+  padding: 40px;
+  color: black;
+}
+
+.member-detail {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* utile pour mobile */
+}
+
+.circular-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.member-detail p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  flex: 1;
+} 
+
+
+
+.encadrement {
+  border-radius: 8px;
+  width: 200px;
+  height: auto;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.image-block { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-align: center;
+  max-width: 200px;
+
+  /* Ajout du style cadre avant/après */
+  background-color: #1a1a1a;
+  border: 3px solid #e63946;
+  border-radius: 12px;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.image-block:hover {
+  transform: scale(1.05);
+}
+
+
+.image-comparison {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.image-box {
+  background-color: #1a1a1a;
+  border: 3px solid #e63946;
+  border-radius: 12px;
+  padding: 10px;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-box:hover {
+  transform: scale(1.05);
+}
+
+.caption {
+  margin-top: 8px;
+  color: #ccc;
+  font-size: 1rem;
+  font-style: italic;
+}
+.image-box {
+  background-color: #1a1a1a;
+  border: 3px solid #e63946;
+  border-radius: 12px;
+  padding: 10px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.image-box:hover {
+  transform: scale(1.03);
+}
+
+.group-photo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.caption {
+  margin-top: 8px;
+  color: #ccc;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.image-box {
+  background-color: #1a1a1a;
+  border: 3px solid #e63946;
+  border-radius: 12px;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.image-box:hover {
+  transform: scale(1.05);
+}
+
+.caption {
+  margin-top: 8px;
+  color: #ccc;
+  font-size: 1rem;
+  font-style: italic;
+}
