@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+<body>
+    <head class="header">
+        <header>
+          <nav class="navbar">
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="pres.html">Présentation</a></li>
+              <li><a href="epreuves.html">Épreuves</a></li>
+              <li><a href="schema.html">Schéma et codes</a></li>
+              <li><a href="equipe.html">Équipe</a></li>
+              <li><a href="conclusion.html">Conclusion</a></li>
+              <li><a href="mailto:maxence.salon@etu.unilasalle.fr">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <!-- Présentation du robot --> 
+        <section id="presentation" class="py-20 px-6 max-w-5xl mx-auto">
+          <h2 class="text-4xl font-bold text-[#e63946] mb-6 text-center">Présentation du Robot</h2>
+          <p class="text-lg leading-relaxed text-center">
+              Notre robot, que nous avons nommé Champion, est basé sur le modèle Otto, 
+              un petit robot humanoïde open-source conçu pour apprendre les bases de la robotique et
+               de la programmation.
+               Dans le cadre de notre projet, nous avons conçu et adapté Champion 
+               pour qu’il soit capable de réaliser plusieurs épreuves techniques : 
+               le combat de sumo, une course de vitesse et une course d’obstacles.
+
+              Notre robot se distingue par sa capacité à marcher, manier ses bras 
+              et se déplacer latéralement, le tout en étant commandé via Bluetooth. 
+              Cette combinaison de mouvements lui permet de répondre efficacement 
+              aux différentes situations rencontrées lors des épreuves, 
+              en alliant autonomie et contrôle à distance.
+
+
+            </section> 
+            <section id="evolution-robot" class="py-16 bg-[#111] text-white">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-[#e63946] mb-8">Évolution du Robot</h2>
+
+    <div class="image-comparison">
+      <div class="image-box">
+        <img src="images/robot.jpg" alt="Robot au début" />
+        <p class="caption">AVANT</p>
+      </div>
+
+      <div class="image-box">
+        <img src="images/CHAMPION.jpg" alt="Robot final" />
+        <p class="caption">APRES (AVEC LE TROPHEE )</p> 
+      </div>
+    </div>
+  </div>
+</section>
+   
+ 
+ <!-- Test Réliser -->
+ <section id="Test réaliser" class="py-20 px-6 bg-[#1a1a1a]">
+  <div class="max-w-5xl mx-auto">
+  <h2 class="text-4xl font-bold text-[#e63946] mb-6 text-center">Test réaliser </h2>
+  <ul class="list-disc pl-6 text-lg space-y-2">
+      <li> Nous avons d'abord testé si notre robot avançait droit et rapidement.
+      Nous avons remarqué qu'il glissait, alors nous avons essayé de corriger ce problème en ajoutant des bandes antidérapantes sous les roues.
+      Ensuite, nous avons voulu que le robot s’arrête automatiquement quand il détecte un obstacle.
+      Pour cela, nous avons programmé un capteur qui envoie un signal d'arrêt dès qu’un objet est détecté devant le robot.
+      Enfin, nous avons codé notre robot pour qu’il puisse avancer, reculer et tourner en utilisant le Bluetooth, avec notre téléphone comme télécommande.
+      </li>
+      <div class="video-container"> 
+
+      <video class="video" width="400" height="360" controls>
+  <source src="images/Video_marcherobot.mp4" type="video/mp4"> 
+
+      </video>
+<video class="video" width="400" height="360" controls>
+  <source src="images/Video_obstacle.mp4" type="video/mp4">
+  </video>
+
+
+<video class="video" width="400" height="360" controls> 
+  <source src="images/Video_piedgaucheMessi.mp4" type="video/mp4"> 
+  </video> 
+
+
+  </div>
+
+  </ul>
+  </div>
+</section>
+
+    
+</body>
+</html>
